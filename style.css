@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Bitter');
-
+/*
 html{
 	height: 100%;
 	width: 100%;
 }
+*/
 .background{
 	background-color: hsl(38, 90%, 80%);
 }
+.title{
+	font-family: 'Bitter', serif;
+	color: hsl(0, 0%, 60%) ;
+	}
+/*
 .h1{
-	width: 10%;
-    height: 35px;
+	width: 100%;
+    height: 40px;
+    position: center;
+	font-family: 'Bitter', serif;
+	color: hsl(0, 0%, 60%) ;
+    text-align: center;
+    float: left;
+    
+}
+
+.h2{
+	width: 100%;
+    height: 40px;
     position: center;
 	font-family: 'Bitter', serif;
 	color: hsl(0, 0%, 60%) ;
@@ -73,4 +90,33 @@ html{
 
   background: #9c9d9e;
   text-decoration: none;
+}*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+
+.title {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 100px;	
+}
+#painel_1, #painel_2, #painel_3 {
+ 	display: table;
+	width: 100%;
+	height: 1000px;
+	text-align:center;	
+	align-content: center;
+}
+#painel_2,#painel_3 {
+	display: none ;
+}
+.conteudo {
+		line-height: 10;
+}
+.header-painel1 {
+	height: 100px;
+	line-height: 100px;
 }

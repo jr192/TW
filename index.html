@@ -12,27 +12,30 @@
 </head>
 
 <body class="background">
-	<div id="header"> 
-		<span class="h1"> Jogo do Nim HEADER</span>
-		<div class="user_account">
-			Username: <input type="text" id="username"><br>
-  			Password: <input type="password" id="password"><br>
+	<div id="painel_1"> 
+		<div class="header_painel1">
+			<span class="title">JOGO DO NIM</span>
+		</div>
+		<div class="conteudo">
 			<button id="login" onclick=login()>Login</button>
 			<button id="registo" onclick=registar()>Registar</button>
 		</div>
 	</div>
 	
-	<div id="menu">
-				<span class="h1"> Jogo do Nim (MENU) </span>
-				<div class="h1">Classificações</div>
-				<div class="h1">Instruções</div>
-				<div class="h1">Configurações</div>
-		
+	<div id="painel_2">
+			<span class="h1"> Jogo do Nim </span><br>
+			Username: <input type="text"><br>
+  			Password: <input type="password"><br>
+  			<button id="login_wData" onclick=login_wData()>Login</button>
+  			
+				
 	</div>
 	
-	<div id="center">
-			CENTER
-				<button id="desistir" onclick=login()>Fds, não quero jogar mais!</button>
+	<div id="painel_3">
+			<button id="classficicao" onclick=buttons()>Classificações</button>
+			<button id="instrucoes" onclick=buttons()>Instruções</button>
+			<button id="configuracoes" onclick=buttons()>Configurações</button>
+		
 				
 	</div>
 

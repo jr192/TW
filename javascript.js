@@ -16,7 +16,7 @@ document.getElementById('tabuleiro').appendChild(table);
 
 
 //var vaar = document.getElementsByClassName('background')[0].style.background="red";
-},1000);*/
+},1000);
 
 function registar(){
 	document.getElementById('painel_login').style.display='none';
@@ -26,4 +26,22 @@ function registar(){
 function login(){
 	document.getElementById('painel_login').style.display='none';
 	document.getElementById('painel_def').style.display='block';
+}
+function buttons(){
+	document.getElementById('login').style.display='none';
+	
+}*/
+
+function registar(){
+	document.getElementById('painel_1').style.display='none';
+	document.getElementById('painel_2').style.display='block';
+}
+
+function login(){
+	document.getElementById('painel_1').style.display='none';
+	document.getElementById('painel_2').style.display='block';
+}
+function login_wData(){
+	document.getElementById('painel_2').style.display='none';
+	document.getElementById('painel_3').style.display='block';
 }
