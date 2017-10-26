@@ -43,10 +43,19 @@ line-height: 60px;
 	height: 2px;
 	width:2px;
 	text-align: center;
-	background-color: rgb(210,105,30);
 	border-radius:50%;
 	
 	background-color: gray	;
+}
+
+.temporario{
+height: 2px;
+	width:2px;
+	text-align: center;
+	border-radius:50%;
+	
+	
+    background-color:grey;
 }
 .inactive {
 	
@@ -112,13 +121,17 @@ line-height: 60px;
 	font-weight: bold;
 	margin-top: 100px;	
 }
-#painel_1, #painel_2, #painel_3 {
+#painel_1, #painel_2, #painel_3{
  	display: table;
 	width: 100%;
 	height: 1000px;
 	text-align:center;	
 	align-content: center;
 }
+#try_again{
+	display:none;
+}
+
 #painel_2{
 	display: none ;
 }
