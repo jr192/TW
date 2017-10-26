@@ -196,7 +196,12 @@ function config() {
 
 	document.getElementById('demo').style.display = 'block';
 }
+function quem_joga(){
+	document.getElementById('quem_joga').style.display = 'none';
+	document.getElementById('demo').style.display = 'block';
+}
 function instrucoes() {
+
 }
 
 function table_click() {

@@ -29,6 +29,10 @@ line-height: 60px;
     height: 200px;
 }
 
+#quem_joga{
+	display: none;
+}
+
 .td {
 	
 	
