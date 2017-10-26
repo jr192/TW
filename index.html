@@ -12,33 +12,50 @@
 </head>
 
 <body class="background">
-	<div id="painel_1"> 
-		<div class="header_painel1">
+	<div id="header">
+		<div class="header_painel1" class="app_name">
 			<span class="title">JOGO DO NIM</span>
 		</div>
-		<div class="conteudo">
-			<button id="login" onclick=login()>Login</button>
-			<button id="registo" onclick=registar()>Registar</button>
+		<div class="header_painel2" class="app_btns"> 
+			<button class="app_btn" id="login" onclick=login()>Login</button>
+			<button class="app_btn" id="registo" onclick=registar()>Registar</button>
 		</div>
 	</div>
 	
 	<div id="painel_2">
-			<span class="h1"> Jogo do Nim </span><br>
 			Username: <input type="text"><br>
   			Password: <input type="password"><br>
-  			<button id="login_wData" onclick=login_wData()>Login</button>
-  			
-				
+  			<button id="login_2" onclick=login_wData()>Login</button>	
 	</div>
 	
 	<div id="painel_3">
-			<button id="classficicao" onclick=buttons()>Classificações</button>
+		<div class="header-painel2">
+			<button id="configurações" onclick=config()>Configurações</button>
 			<button id="instrucoes" onclick=buttons()>Instruções</button>
-			<button id="configuracoes" onclick=buttons()>Configurações</button>
-		
-				
-	</div>
-
+			<button id="classficações" onclick=buttons()> Classificações</button>
+		</div>	
+		<div id="demo">
+			Primeiro a jogar: <button id="selecionar_jogador" onclick=first_play()>Pc</button>
+							  <button id="selecionar_jogador" onclick=first_play()>Utilizador</button>
+		</div>
+		<div id="demo_2">
+			Dificuldade: <button id="selecionar_jogador" onclick=dif_play()>Dificil</button>
+							  <button id="selecionar_jogador" onclick=dif_play()>Fácil</button>
+		</div>
+		 <div id="demo_3">
+			<br>Tamanho do tabuleiro: <input id="numb" >
+			<button id="dim_tab" onclick=myFunction()>Submit</button>
+			
+		</div>
+		<div id="gerar_tab">
+				<button id="dim_tab2" onclick=gerar_tab()>Gerar</button>
+				<div id="tabuleiro">
+				</div>
+		</div>
+			
+</div>
+	
+	
     
 
 </body>
