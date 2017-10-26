@@ -31,16 +31,16 @@
 	<div id="painel_3">
 		<div class="header-painel2">
 			<button id="configurações" onclick=config()>Configurações</button>
-			<button id="instrucoes" onclick=buttons()>Instruções</button>
+			<button id="instrucoes" onclick=instrucoes()>Instruções</button>
 			<button id="classficações" onclick=buttons()> Classificações</button>
 		</div>	
 		<div id="demo">
-			Primeiro a jogar: <button id="selecionar_jogador" onclick=first_play()>Pc</button>
+			Primeiro a jogar: <button id="selecionar_jogador" onclick=first_play_pc()>Pc</button>
 							  <button id="selecionar_jogador" onclick=first_play()>Utilizador</button>
 		</div>
 		<div id="demo_2">
 			Dificuldade: <button id="selecionar_jogador" onclick=dif_play()>Dificil</button>
-							  <button id="selecionar_jogador" onclick=dif_play()>Fácil</button>
+						 <button id="selecionar_jogador" onclick=dif_play()>Fácil</button>
 		</div>
 		 <div id="demo_3">
 			<br>Tamanho do tabuleiro: <input id="numb" >
@@ -48,8 +48,10 @@
 			
 		</div>
 		<div id="gerar_tab">
-				<button id="dim_tab2" onclick=gerar_tab()>Gerar</button>
+				<!-- <button id="dim_tab2" onclick=gerar_tab()>Gerar</button>-->
+			
 				<div id="tabuleiro">
+					<table id="tableclass" class=""></table>
 				</div>
 		</div>
 			

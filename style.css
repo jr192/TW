@@ -21,53 +21,56 @@ height: 60px;
 width:100%;
 line-height: 60px;
 }
-/*
-.h1{
-	width: 100%;
-    height: 40px;
-    position: center;
-	font-family: 'Bitter', serif;
-	color: hsl(0, 0%, 60%) ;
-    text-align: center;
-    float: left;
-    
-}
 
-.h2{
-	width: 100%;
-    height: 40px;
-    position: center;
-	font-family: 'Bitter', serif;
-	color: hsl(0, 0%, 60%) ;
-    text-align: center;
-    float: left;
-    
-}
-
-.user_account{
-	float: right;
-}
-*/
-#tabuleiro, .tableclass{
+#tabuleiro, #tableclass{
 	margin: auto;
-    width: 700px;
+    width: 200px;
     padding: 30px;
-    height: 500px;
+    height: 200px;
 }
 
 .td {
-	border: 1px solid black;
-	height: 50px;
-	width:50px;
+	
+	
+	height: 2px;
+	width:2px;
 	text-align: center;
 	background-color: rgb(210,105,30);
+	border-radius:50%;
+	}
+
+.td:hover{
+	height: 2px;
+	width:2px;
+	text-align: center;
+	background-color: rgb(210,105,30);
+	border-radius:50%;
+	
+	background-color: gray	;
+}
+.inactive {
+	
+	height: 2px;
+	width:2px;
+	text-align: center;
+	border-radius:50%;
+	
+
+    background-color: hsl(38, 90%, 80%);
+}
+.active {
+	height: 2px;
+	width:2px;
+	text-align: center;
+	border-radius:50%;
 	
 	
+    background-color:grey;
 }
 .tr {
-	border: 1px solid black;
+	
 	text-align: center;
-		background-color: rgb(210,105,30);
+	background-color: rgb(210,105,30);
 }/*
 #header,#menu{
 	height: 35px;
@@ -160,7 +163,28 @@ line-height: 60px;
 	height: 60px;
 }
 
-#gerar_tab, first_play{
+#gerar_tab, #first_play{
 	display: none;
+}
+
+#speech-bubble {
+	position: relative;
+	background: #ad2100;
+	border-radius: .4em;
+}
+
+#speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-bottom-color: #ad2100;
+	border-top: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+	margin-top: -35px;
 }
 
