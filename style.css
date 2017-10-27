@@ -1,35 +1,89 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
-html{
+html {
 	height: 100%;
 	width: 100%;
 }
 
-.background{
-	background-color: hsl(38, 90%, 80%);
+.background {
+	background-color: rgb(245, 245, 245);
 	margin: 0;
 }
-.title{
+
+#header {
+	height: 65px;
+	width: 100%;
+	background: #c37676;;
+}
+
+.title {
 	font-family: 'Bitter', serif;
-	color: hsl(0, 0%, 60%) ;
-	}
+	color: hsl(0, 0%, 60%);
+}
+
+.title {
+	margin-left: 10px;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 100px;
+}
+
+.header_painel1 {
+	border: 3px solid brown;
+	border-right: 0px;
+	border-left: 0px;
+	height: 60px;
+	line-height: 60px;
+	width: 50%;
+	float: left;
+}
+
+.header_painel2 {
+	border: 3px solid brown;
+	border-right: 0px;
+	border-left: 0px;
+	height: 60px;
+	width: 50%;
+	float: left;
+}
+
 .header-painel2 {
-position: center;	
-background-color: #bfbfbf;
-height: 60px;
-width:100%;
-line-height: 60px;
+	position: center;
+	background-color: #c37676;
+	height: 60px;
+	width: 100%;
+	line-height: 60px;
 }
 
-#tabuleiro, #tableclass{
+.menu {
+	display: inline-block;
+	text-align: center;
+	height: 60px;
+	width: 100%;
+	margin-bottom: 1px;
+	border: 3px solid brown;
+	border-right: 0px;
+	border-left: 0px;
+	border-top: 0px;
+	background: #bfbfbf;
+}
+
+.menu.but {
+	float: right;
+	width: 300px;
+}
+
+#tabuleiro, #tableclass {
 	margin: auto;
-    width: 200px;
-    padding: 30px;
-    height: 200px;
+	width: 450px;
+	padding: 30px;
+	height: 450px;
 }
 
-#quem_joga{
+#quem_joga, #try_again{
 	display: none;
 }
 
@@ -43,13 +97,12 @@ line-height: 60px;
 	border-radius:50%;
 	}
 
-.td:hover{
+.td:hover {
 	height: 2px;
 	width:2px;
 	text-align: center;
 	border-radius:50%;
-	
-	background-color: gray	;
+	background-color: gray;
 }
 
 .temporario{
@@ -61,108 +114,89 @@ height: 2px;
 	
     background-color:grey;
 }
-.inactive {
-	
-	height: 2px;
-	width:2px;
-	text-align: center;
-	border-radius:50%;
-	
 
-    background-color: hsl(38, 90%, 80%);
+.inactive {
+	height: 2px;
+	width: 2px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgb(245, 245, 245);
 }
+
 .active {
 	height: 2px;
-	width:2px;
+	width: 2px;
 	text-align: center;
-	border-radius:50%;
-	
-	
-    background-color:grey;
+	border-radius: 50%;
+	background-color: grey;
 }
+
 .tr {
-	
 	text-align: center;
-	background-color: rgb(210,105,30);
-}/*
-#header,#menu{
-	height: 35px;
-	width: 100%;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	background-color: rgb(210, 105, 30);
 }
+
+/*
 #center{
 	margin-top: 30px;
 	margin-bottom: 30px;
 	min-height: 500px;
 	width: 100% !important;
 }*/
-#login, #registo, #login_2{
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 20px;
-  background: #991616;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-
+#login, #registo, #login_2 {
+	font-family: Courier New;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid orange;
+    margin-top: 7px;
 }
 
-#login:hover, #registo:hover{
-
-  background: #9c9d9e;
-  text-decoration: none;
+#login {
+	margin-right: 10px;
 }
 
-#demo,#demo_2,#demo_3{
+#login:hover, #registo:hover {
+	background: #9c9d9e;
+	text-decoration: none;
+}
+
+#demo, #demo_2, #demo_3 {
 	display: none;
 }
 
-.title {
-	font-size: 40px;
-	font-weight: bold;
-	margin-top: 100px;	
-}
-#painel_1, #painel_2, #painel_3{
- 	display: table;
+#painel_1, #painel_2, #painel_3 {
+	display: table;
 	width: 100%;
 	height: 1000px;
-	text-align:center;	
+	text-align: center;
 	align-content: center;
 }
-#try_again{
-	display:none;
+
+#painel_2 {
+	display: none;
 }
 
-#painel_2{
-	display: none ;
-}
-#painel_3{
+#painel_3 {
 	width: 100%;
-	height: 680px;
+	height: 780px;
 }
+
 .header {
 	width: 100%;
 	height: 100px;
 }
 
-.header_painel1 {
-	height: 60px;
-	width: 50%;
-	float:left;
-}
-
-.header_painel2 {
-	height: 60px;
-	width: 50%;
-	float:left;
+#bot {
+	text-align: center;
 }
 
 .app_name {
 	width: 100%;
 }
+
 .app_btns {
 	width: 100%;
 }
@@ -171,16 +205,16 @@ height: 2px;
 	float: right;
 }
 
-#pc_uti{
+#pc_uti {
 	color-background: blue;
 }
 
+/*
 .header-painel2{
 	width:100%;
 	height: 60px;
-}
-
-#gerar_tab, #first_play{
+}*/
+#gerar_tab, #first_play {
 	display: none;
 }
 
@@ -205,3 +239,29 @@ height: 2px;
 	margin-top: -35px;
 }
 
+#instrucoes, #jogar, #configuracoes, #classficacoes {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	margin-left: 15px;
+}
+
+#configuracoes {
+	background-image: url('settings.png');
+}
+
+#jogar {
+	background-image: url('play.png');
+}
+
+#classficacoes {
+	background-image: url('ranking.png');
+}
+
+#instrucoes {
+	background-image: url('rules.png');
+}

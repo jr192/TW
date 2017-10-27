@@ -20,7 +20,7 @@ function gerar_tab() {
 		}
 	}
 	if(flag!=0)
-		setTimeout(pc_play, 3000);
+		setTimeout(pc_play, 2000);
 
 	
 }
@@ -193,14 +193,14 @@ function login_wData() {
 }
 function config() {
 	clearBoard();
-
-	document.getElementById('demo').style.display = 'block';
+	document.getElementById('quem_joga').style.display = 'block';
 }
 function quem_joga(){
 	document.getElementById('quem_joga').style.display = 'none';
 	document.getElementById('demo').style.display = 'block';
 }
 function instrucoes() {
+	
 
 }
 
@@ -209,3 +209,9 @@ function table_click() {
 	alert(boardElement.rows[l].cells[c]);
 }
 
+function try_again(){
+	document.getElementById('gerar_tab').style.display = 'none';
+
+	document.getElementById('painel_3').style.display = 'block';
+
+}

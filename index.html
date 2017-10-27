@@ -28,21 +28,24 @@
   			<button id="login_2" onclick=login_wData()>Login</button>	
 	</div>
 	
+	<div class="menu">
+			<button  id="jogar" ></button>
+			<button  id="configuracoes" onclick=config()></button>
+			<button  id="instrucoes" onclick=instrucoes()></button>
+			<button  id="classficacoes" onclick=buttons()></button>
+	</div>	
+	
 	<div id="painel_3">
-		<div class="header-painel2">
-			<button id="configurações" onclick=config()>Configurações</button>
-			<button id="instrucoes" onclick=instrucoes()>Instruções</button>
-			<button id="classficações" onclick=buttons()> Classificações</button>
-		</div>	
-		<div id="quem_joga">
+	
+	<div id="quem_joga">
 			Modo de jogo:  <button id="selecionar_jogador" onclick=quem_joga()>Offline</button>
 						   <button id="selecionar_jogador" >Online</button>
-		</div>
+	</div>
+
 		<div id="demo">
 			Primeiro a jogar: <button id="selecionar_jogador" onclick=first_play_pc()>Pc</button>
 							  <button id="selecionar_jogador" onclick=first_play()>Utilizador</button>
 		</div>
-		
 		<div id="demo_2">
 			Dificuldade: <button id="selecionar_jogador" onclick=dif_play()>Dificil</button>
 						 <button id="selecionar_jogador" onclick=dif_play()>Fácil</button>
@@ -58,11 +61,16 @@
 				<div id="tabuleiro">
 					<table id="tableclass" class=""></table>
 				</div>
+				<div id="try_again">
+					<button id="dim_tab2" onclick=try_again()>Tentar outra vez</button>
+				</div>
 		</div>
-		
+			
 </div>
 	
-	
+	<div id="bot">
+	<span>2018, João Rodrigues & João Pereira</span>
+	</div>
     
 
 </body>
